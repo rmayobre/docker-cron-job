@@ -1,0 +1,7 @@
+version: '3'
+services:
+  cron:
+    build: .
+    container_name: 'cron-test'
+    volumes:
+      - ./data/cron/log:/var/log/cron
